@@ -4,18 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jayalakshmy Jayakrishnan</title>
+
+  <!-- Fonts & Tailwind -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Library for Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-[#0f0f0f] text-white font-inter">
 
-  <!-- 404 Entry Page -->
-  <div id="entry-card" class="flex flex-col items-center justify-center h-screen text-center transition-all duration-500 ease-in-out">
+  <!-- 404 Entry Screen -->
+  <div id="entry-card" class="flex flex-col items-center justify-center h-screen text-center transition-all duration-500 ease-in-out animate-pulse hover:scale-105">
     <h1 class="text-5xl font-playfair text-[#ffc6d0] tracking-wide">404 Page <span class="line-through text-gray-500">Not</span> Found</h1>
-    <p class="mt-4 text-[#d4d4d4] text-lg italic">But we found someone remarkable…</p>
+    <p class="mt-4 text-[#d4d4d4] text-lg italic">But found someone remarkable.</p>
     <button onclick="reveal()" class="mt-8 px-6 py-2 bg-[#ffc6d0] text-black font-semibold rounded-full hover:bg-pink-300 transition">
-      Enter Portfolio
+      OPEN
     </button>
   </div>
 
@@ -23,10 +29,10 @@
   <div id="portfolio" class="hidden max-w-4xl mx-auto px-6 py-16 space-y-10">
 
     <h1 class="text-5xl font-playfair text-center tracking-wide text-[#ffc6d0]">Jayalakshmy Jayakrishnan</h1>
-    <p class="text-center text-gray-300 text-lg">Data Science Engineering Student </p>
+    <p class="text-center text-gray-300 text-lg">Data Science Engineering Student</p>
 
     <!-- About Me -->
-    <section>
+    <section data-aos="fade-up">
       <h2 class="text-2xl font-playfair text-[#ffc6d0] mb-3">About Me</h2>
       <p class="text-gray-300 leading-relaxed">
        As someone who’s highly ambitious and deeply curious, I’ve come to value the importance of stepping beyond comfort zones. Looking for opportunities that challenge me, because that’s where real growth begins.🪄
@@ -39,7 +45,7 @@ My journey is grounded in a strong desire to keep learning and contributing, and
     </section>
 
     <!-- Skills -->
-    <section>
+    <section data-aos="fade-left">
       <h2 class="text-2xl font-playfair text-[#ffc6d0] mb-3">Skills</h2>
       <ul class="text-gray-300 space-y-1 list-disc list-inside">
         <li>Python, C, SQL, Shell Scripting</li>
@@ -49,35 +55,30 @@ My journey is grounded in a strong desire to keep learning and contributing, and
     </section>
 
     <!-- Experience -->
-    <section>
+    <section data-aos="fade-right">
       <h2 class="text-2xl font-playfair text-[#ffc6d0] mb-3">Experience</h2>
       <div class="text-gray-300 space-y-4">
-
         <div>
           <h3 class="font-semibold">Chairperson, OBSCURA ASIET (2025 – Present)</h3>
           <p>Led the core executive team, managing events, budgets, and collaborations. Delivered technical sessions and organized workshops with industry professionals.</p>
         </div>
-
         <div>
           <h3 class="font-semibold">Department Placement Coordinator, ASIET (2024 – Present)</h3>
           <p>Handled campus recruitment logistics, coordinated with companies, and guided students through placement phases. Supported drives like HTC Global.</p>
         </div>
-
         <div>
           <h3 class="font-semibold">Content Lead, Science Club ASIET (2023–24)</h3>
           <p>Created visual and written content, organized competitions, and led committee selection ensuring continuity and impact.</p>
         </div>
-
         <div>
           <h3 class="font-semibold">Technical Events Coordinator, IEEE SB ASIET (2025)</h3>
           <p>Coordinated events like Cipher (Cybersecurity) and Grace (Soft Skills). Managed brainstorming, promotion, reports, and expert outreach.</p>
         </div>
-
       </div>
     </section>
 
     <!-- Certifications -->
-    <section>
+    <section data-aos="fade-left">
       <h2 class="text-2xl font-playfair text-[#ffc6d0] mb-3">Certifications</h2>
       <ul class="list-disc list-inside text-gray-300 space-y-1">
         <li><strong>IBM:</strong> Data Science Foundations</li>
@@ -87,7 +88,7 @@ My journey is grounded in a strong desire to keep learning and contributing, and
     </section>
 
     <!-- Education -->
-    <section>
+    <section data-aos="fade-up">
       <h2 class="text-2xl font-playfair text-[#ffc6d0] mb-3">Education</h2>
       <ul class="text-gray-300 space-y-1">
         <li><strong>ASIET, Kalady</strong> – B.Tech in Computer Engineering (Data Science), 9.86 CGPA</li>
@@ -96,7 +97,7 @@ My journey is grounded in a strong desire to keep learning and contributing, and
       </ul>
     </section>
 
-    <!-- Resume Link -->
+    <!-- Resume -->
     <div class="text-center">
       <a href="assets/resume.pdf" target="_blank" class="inline-block mt-6 px-6 py-2 bg-[#ffc6d0] text-black font-semibold rounded-full hover:bg-pink-300 transition">
         View Full Resume
@@ -104,7 +105,7 @@ My journey is grounded in a strong desire to keep learning and contributing, and
     </div>
 
     <!-- Contact -->
-    <section class="text-center mt-10">
+    <section class="text-center mt-10" data-aos="fade-up">
       <h2 class="text-2xl font-playfair text-[#ffc6d0] mb-4">Contact</h2>
       <p class="text-gray-300 mb-2">Western Road, Malayatoor, Ernakulam, 683574</p>
       <p class="text-gray-300 mb-2">
@@ -112,9 +113,17 @@ My journey is grounded in a strong desire to keep learning and contributing, and
       </p>
       <p class="text-gray-300">+91 90742 21955</p>
     </section>
-
   </div>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: 'ease-in-out',
+    });
+  </script>
 </body>
 </html>
