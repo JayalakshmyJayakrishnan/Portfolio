@@ -1,0 +1,4 @@
+@layer base {
+  .font-steelfish { font-family: 'Roboto Slab', serif; }
+  .font-bodoni { font-family: 'Bauer Bodoni', serif; }
+}
