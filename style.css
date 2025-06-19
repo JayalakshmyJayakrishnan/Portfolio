@@ -1,4 +1,9 @@
-@layer base {
-  .font-steelfish { font-family: 'Roboto Slab', serif; }
-  .font-bodoni { font-family: 'Bauer Bodoni', serif; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
 }
